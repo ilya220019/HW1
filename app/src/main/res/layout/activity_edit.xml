@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+
+       <TextView
+            android:id="@+id/tv_phone1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Введите код на введенный номер: "
+
+            />
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_generate"
+            android:text="Log"
+            />
+        <EditText
+            android:id="@+id/tv_cod"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:hint="Код"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone1"
+            android:layout_marginTop="50dp"
+
+            />
+        <Button
+            android:id="@+id/btn_generate"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Generate"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cod"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:id="@+id/tw_you_cod"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_generate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Ваш код: "
+            android:layout_marginTop="50dp"
+
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
